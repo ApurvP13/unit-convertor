@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  text-align: center;
+  background-color: #f4f4f4;
+  font-family: "Inter", sans-serif;
+}
+
+#hero-section {
+  background-color: #6943ff;
+  height: 285px;
+  padding: 20px;
+}
+
+#heading {
+  font-size: 38px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+#val-input {
+  display: block;
+  margin: 30px auto 0;
+  width: 117px;
+  height: 83px;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #b295ff;
+  background-color: #6943ff;
+  font-size: 58px;
+  color: white;
+}
+
+#val-input::placeholder {
+  color: white;
+}
+
+#convert-btn {
+  background-color: white;
+  border: none;
+  width: 117px;
+  height: 42px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 28px;
+  font-family: "Inter", sans-serif;
+}
+
+.unit-display {
+  background-color: white;
+  width: 500px;
+  height: 109px;
+  margin: 36px auto;
+  color: #5a537b;
+  padding: 31px 77px;
+}
+
+.unit-display p {
+  color: #353535;
+  font-size: 14px;
+}
