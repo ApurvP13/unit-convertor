@@ -59,5 +59,6 @@ body {
 
 .unit-display p {
   color: #353535;
-  font-size: 14px;
+  font-size: 20px;
+  font-weight: 300;
 }
