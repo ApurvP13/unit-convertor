@@ -15,6 +15,10 @@ const valInput = document.getElementById("val-input");
 const lengthVal = document.getElementById("length-val");
 const volumeVal = document.getElementById("volume-val");
 const massVal = document.getElementById("mass-val");
+const sysMode = document.getElementById("mode");
+const unitDisplay = document.querySelectorAll(".unit-display");
+const subHead = document.querySelectorAll(".sub-head");
+const unitDisplayParagraphs = document.querySelectorAll(".unit-display p");
 
 function render(val, unit) {
   let retVal = "";
@@ -41,4 +45,36 @@ convertBtn.addEventListener("click", () => {
   lengthVal.textContent = render(val, "length");
   volumeVal.textContent = render(val, "volume");
   massVal.textContent = render(val, "mass");
+});
+
+sysMode.addEventListener("click", () => {
+  if (sysMode.textContent === "🔆") {
+    document.body.classList.remove("dark-mode");
+    document.body.classList.add("light-mode");
+    sysMode.textContent = "🌙";
+    unitDisplay.forEach((display) => {
+      display.style.backgroundColor = "white";
+      //   display.style.color = "#353535";
+    });
+    subHead.forEach((subs) => {
+      subs.style.color = "#5a537b";
+    });
+    unitDisplayParagraphs.forEach((paragraph) => {
+      paragraph.style.color = "#353535";
+    });
+  } else {
+    document.body.classList.remove("light-mode");
+    document.body.classList.add("dark-mode");
+    sysMode.textContent = "🔆";
+    unitDisplay.forEach((display) => {
+      display.style.backgroundColor = "#273549";
+      display.style.color = "#ffffff";
+    });
+    subHead.forEach((subs) => {
+      subs.style.color = "#CCC1FF";
+    });
+    unitDisplayParagraphs.forEach((paragraph) => {
+      paragraph.style.color = "#ffffff";
+    });
+  }
 });

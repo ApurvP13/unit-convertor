@@ -5,6 +5,14 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.dark-mode {
+  background-color: #1f2937;
+}
+
+.light-mode {
+  background-color: #f4f4f4;
+}
+
 #hero-section {
   background-color: #6943ff;
   height: 285px;
@@ -61,4 +69,18 @@ body {
   color: #353535;
   font-size: 20px;
   font-weight: 300;
+}
+
+#mode {
+  background-color: #6943ff;
+  border: none;
+  font-size: 30px;
+}
+
+#nav-bar {
+  background-color: #6943ff;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  /* margin: 60px 80px; */
 }

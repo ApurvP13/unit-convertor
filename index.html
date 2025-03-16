@@ -11,7 +11,10 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="light-mode">
+    <header id="nav-bar">
+      <button id="mode">🌙</button>
+    </header>
     <section id="hero-section">
       <h1 id="heading">Metric/Imperial Unit Conversion</h1>
       <input type="text" placeholder="val" id="val-input" />
@@ -19,17 +22,17 @@
     </section>
 
     <section class="unit-display">
-      <h2>Length (Meters/Feet)</h2>
+      <h2 class="sub-head">Length (Meters/Feet)</h2>
       <p id="length-val">|</p>
     </section>
 
     <section class="unit-display">
-      <h2>Volume (Liters/Gallons)</h2>
+      <h2 class="sub-head">Volume (Liters/Gallons)</h2>
       <p id="volume-val">|</p>
     </section>
 
     <section class="unit-display">
-      <h2>Mass (Kilogram/Pounds)</h2>
+      <h2 class="sub-head">Mass (Kilogram/Pounds)</h2>
       <p id="mass-val">|</p>
     </section>
 
